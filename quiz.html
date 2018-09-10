@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+         h1{
+            height: 70px;
+            width: 750px;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 0px;
+            background: #00c8ff;
+            color: #fff;
+            font-size: 60px;
+             font-family:Castellar;
+            border-radius: 50px;
+        }
+        body{
+            font-family:'Berlin Sans FB';
+            font-size:25px;
+        }
+        #quizContainer{
+            width: 750px;
+            border: 0px solid red;
+            margin: 0 auto;
+        }
+        .next-btn{
+        	height: 40px;
+            width: 80px;
+            font-size: 20px;
+         	//margin-left: 340px;
+         	background: #00c8ff;
+         	color: #fff;
+         	border-radius: 10px;
+            float:right
+        }
+
+    </style>
+</head>
+<body id="body">
+
+    <div id="quizContainer" class="container">
+        <div class="title"><h1>Quiz</h1><br /><hr /></div><br />
+        <div id="question" class="question"></div><br />
+        <label class="option"><input type="radio" name="option" value="1" /><span id="opt1"></span></label><br /><br />
+        <label class="option"><input type="radio" name="option" value="2" /><span id="opt2"></span></label><br /><br />
+        <label class="option"><input type="radio" name="option" value="3" /><span id="opt3"></span></label><br /><br />
+        <label class="option"><input type="radio" name="option" value="4" /><span id="opt4"></span></label><br /><br />
+        <button id="nextButton" class="next-btn" onclick="loadNextQuestion();">Next</button>
+    </div>
+    <div id="result" class="container result" style="display:none;">
+    </div>
+
+
+    <script src="quiz.js"></script>
+
+</body>
+</html>
